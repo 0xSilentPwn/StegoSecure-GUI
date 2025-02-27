@@ -32,7 +32,7 @@ This project implements Steganography to securely hide text messages and files i
 
 1️⃣ Clone the Repository
 
-git clone (https://github.com/0xSilentPwn/StegoSecure.git)
+git clone https://github.com/0xSilentPwn/StegoSecure.git
 
 cd StegoSecure-GUI
 
