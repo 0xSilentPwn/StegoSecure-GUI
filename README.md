@@ -32,13 +32,13 @@ This project implements Steganography to securely hide text messages and files i
 
 1️⃣ Clone the Repository
 
-git clone https://github.com/0xSilentPwn/StegoSecure.git
+`git clone https://github.com/0xSilentPwn/StegoSecure.git`
 
-cd StegoSecure-GUI
+`cd StegoSecure-GUI`
 
 2️⃣ Install Required Dependencies
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## 📌 Future Scope
 
