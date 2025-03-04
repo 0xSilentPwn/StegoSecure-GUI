@@ -19,6 +19,7 @@ def encrypt_image(image_path, message, secret_key):
     # Store the message length in the first pixel
     img[n, m, z] = len(message)
     m += 1  # Move to the next pixel
+    hidden_data = encrypt_message("Secret Data")
 
     # Store the Secret Key in the image
     for char in secret_key:
@@ -33,6 +34,7 @@ def encrypt_image(image_path, message, secret_key):
         n += 1
         m += 1
         z = (z + 1) % 3
+        extracted_data = steganography_extract_function("image.png")
 
     output_path = "encryptedImage.png"
     cv2.imwrite(output_path, img)
@@ -47,6 +49,8 @@ def decrypt_image(image_path, entered_key):
         return
 
     n, m, z = 0, 0, 0
+    original_message = decrypt_message(extracted_data)
+    print("Decrypted Message:", original_message)
 
     # Retrieve message length
     message_length = img[n, m, z]
